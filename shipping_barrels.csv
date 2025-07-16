@@ -1,0 +1,57 @@
+Container Code,Type,Composite Material,Volume Capacity (Gallons),Volume Capacity (Cubic Meter),Dimensions,Weight(Lbs),Weight(KG),Price
+672,IBC Tote,HDPE/Steel,135,510.975,40in by 48in by 27in H,20.4,9.25,938.4
+673,IBC Tote,HDPE/Steel,275,1040.875,40in by 48in by 46in H,135,61.22,6210
+674,IBC Tote,HDPE/Steel,330,1249.05,40in by 48in by 53in H,155,70.29,7130
+207,Steel Drum Tight-head,304-2B Stainless Steel,5,18.925,14in W by 9.4in H,10,4.54,460
+208,Steel Drum Tight-head,304-2B Stainless Steel,8,30.28,14in W by 15.1in H,14,6.35,644
+209,Steel Drum Tight-head,304-2B Stainless Steel,10,37.85,14in W by 18in H,15,6.8,690
+210,Steel Drum Tight-head,304-2B Stainless Steel,16,60.56,14in W by 26in H,19,8.62,874
+211,Steel Drum Tight-head,304-2B Stainless Steel,20,75.7,18.25in W by 20in H,27,12.24,1242
+212,Steel Drum Tight-head,304-2B Stainless Steel,30,113.55,18.25in W by 27.8in H,33,14.97,1518
+213,Steel Drum Tight-head,304-2B Stainless Steel,55,208.175,22.5in W by 33.5in H,48,21.77,2208
+900,Steel Drum Open-head,304-2B Stainless Steel,5,18.925,14in W by 8.9in H,10,4.54,460
+901,Steel Drum Open-head,304-2B Stainless Steel,8,30.28,14in W by 14.4in H,14,6.35,644
+902,Steel Drum Open-head,304-2B Stainless Steel,10,37.85,14in W by 17.4in H,15,6.8,690
+903,Steel Drum Open-head,304-2B Stainless Steel,16,60.56,14in W by 25.6in H,19,8.62,874
+904,Steel Drum Open-head,304-2B Stainless Steel,20,75.7,18.25in W by 19.2in H,25,11.34,1150
+905,Steel Drum Open-head,304-2B Stainless Steel,30,113.55,18.25in W by 26.6in H,35,15.87,1610
+906,Steel Drum Open-head,304-2B Stainless Steel,55,208.175,22.5in W by 32.8in H,50,22.68,2300
+907,Steel Drum Open-head,304-2B Stainless Steel,65,246.025,30in W by 21.4in H,86.5,39.23,3979
+908,Steel Drum Open-head,304-2B Stainless Steel,85,321.725,26in W by 36.8in H,82,37.19,3772
+909,Steel Drum Open-head,304-2B Stainless Steel,110,416.35,30in W by 40.8in H,105,47.62,4830
+671,Plastic Drum Open-head,HDPE,8,30.28,13.25in W by 19.6875in H,4.5,2.04,207
+670,Plastic Drum Open-head,HDPE,15,56.775,15in W by 19.5in H,7,3.17,322
+680,Plastic Drum Open-head,HDPE,30,113.55,18.5in W by 29.75in H,17.5,7.94,805
+677,Plastic Drum Open-head,HDPE,55,208.175,24.25in W by 36in H,25.5,11.56,1173
+941,Plastic Drum Closed-head,HDPE,15,56.775,14.5in W by 26.5in H,9.5,4.31,437
+949,Plastic Drum Closed-head,HDPE,30,113.55,19.25in W by 29.5in H,15.5,7.03,713
+927,Plastic Drum Closed-head,HDPE,55,208.175,23.75in W by 35in H,23,10.43,1058
+935,Fiber Drums Open-head,Paper/Steel,6.5,24.6025,16in W by 9.5in H,4,1.81,184
+936,Fiber Drums Open-head,Paper/Steel,10,37.85,16in W by 13.5in H,7,3.17,322
+937,Fiber Drums Open-head,Paper/Steel,15,56.775,16in W by 20.5in H,7,3.17,322
+938,Fiber Drums Open-head,Paper/Steel,20,75.7,16in W by 25.5in H,8,3.63,368
+939,Fiber Drums Open-head,Paper/Steel,30,113.55,19in W by 27in H,13,5.9,598
+931,Fiber Drums Open-head,Paper/Steel,35,132.475,19in W by 31.625in H,14,6.35,644
+932,Fiber Drums Open-head,Paper/Steel,41,155.185,22.125in W by 27.25in H,15,6.8,690
+933,Fiber Drums Open-head,Paper/Steel,44,166.54,22.125in W by 29.25in H,16,7.26,736
+997,Fiber Drums Open-head,Paper/Steel,55,208.175,22.125in W by 35.5in H,17,7.71,782
+922,Fiber Drums Open-head,Paper/Steel,72,272.52,23.5in W by 41.25in H,20,9.07,920
+945,Steel Pail Open-head,Steel,1,3.785,11.75in W by 8.25in H,1.25,0.57,57.5
+978,Steel Pail Open-head,Steel,3.5,13.2475,11.75in W by 9.5in H,2,0.91,92
+956,Steel Pail Open-head,Steel,3.5,13.2475,11.75in W by 9.875in H,3,1.36,138
+989,Steel Pail Open-head,Steel,5,18.925,8.5625in W by 13.375in H,6,2.72,276
+930,Steel Pail Open-head,Steel,6,22.71,7.125in W by 15.875H,7,3.17,322
+290,Steel Pail Closed-head,Steel,1,3.785,6.375in W by 8.625in H,2,0.91,92
+291,Steel Pail Closed-head,Steel,3.5,13.2475,10.875in W by 10.5in H,4,1.81,184
+292,Steel Pail Closed-head,Steel,5,18.925,10.875in W by 13.625in H,6,2.72,276
+295,Steel Pail Closed-head,Steel,7,26.495,10.875in W by 18.5in H,6.5,2.95,299
+920,Plastic Pail Screw Top,HDPE,1.25,4.73125,8.5in W by 8.25in H,1.5,0.68,69
+921,Plastic Pail Screw Top,HDPE,2,7.57,9.75in W by 10.25in H,2,0.91,92
+942,Plastic Pail Screw Top,HDPE,3.5,13.2475,12.75in W by 10.75in H,3,1.36,138
+923,Plastic Pail Screw Top,HDPE,5,18.925,12.75in W by 13.5in H,4,1.81,184
+928,Plastic Pail Screw Top,HDPE,6.5,24.6025,12.75in W by 16.625in H,4.5,2.04,207
+3,Plastic Pail Snap Top,HDPE,1.25,4.73125,8in W by 7.25in H,0.75,0.34,34.5
+4,Plastic Pail Snap Top,HDPE,2,7.57,9.5625in W by 9.5in H,1,0.45,46
+5,Plastic Pail Snap Top,HDPE,3.5,13.2475,12in W by 10.5in H,3,1.36,138
+6,Plastic Pail Snap Top,HDPE,5,18.925,12in W by 14.5in H,3.5,1.59,161
+7,Plastic Pail Snap Top,HDPE,6.5,24.6025,12in W by 17.5in H,4,1.81,184

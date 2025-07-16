@@ -1,0 +1,30 @@
+# Python specific ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+env/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+shipping/
+bin/
+lib/
+lib64
+pyvenv.cfg
+
+# Flask specific ignores
+instance/
+.flaskenv
+.env
+
+# Database specific ignores (if you have local DB files, e.g., SQLite)
+*.db
+*.sqlite
+*.sqlite3
+
+# Operating System specific ignores
+.DS_Store
+Thumbs.db

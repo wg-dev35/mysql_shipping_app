@@ -1,0 +1,51 @@
+<!--full trackingpanel-->
+{% if tracking_details %}
+<article class="panel is-success">
+    <p class="panel-heading">Tracking #{{ tracking_details['tracking_no'] }}</p>
+    <button class="delete is-right"></button>
+    <a class="panel-block">
+        <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+        </span>
+        <time datetime="2016-1-1">Ordered on: {{ tracking_details['order_date'] }}</time>
+    </a>
+    <a class="panel-block">
+        <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+        </span>
+        Product(s) Ordered: {{tracking_details['product_name']}}
+    </a>
+    <a class="panel-block">
+        <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+        </span>
+        Amount: {{tracking_details['product_quantity']}}
+    </a>
+    <a class="panel-block">
+        <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+        </span>
+        Shipping from: {{tracking_details['origin_port']}}
+    </a>
+    <a class="panel-block">
+        <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+        </span>
+        Arriving to: {{tracking_details['dest_port']}}
+    </a>
+    <a class="panel-block">
+        <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+        </span>
+        Estimated Arrival Date: {{tracking_details['est_travel_arr']}}
+    </a>
+    <a class="panel-block">
+        <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+        </span>
+        Date Shipped: {{tracking_details['ship_date']}}
+    </a>
+</article>
+{% else %}
+<p>Invoice details not found.</p>
+{% endif %}

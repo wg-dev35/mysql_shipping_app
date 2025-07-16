@@ -1,0 +1,16 @@
+:root {
+  --primary: #0359f5; /* Your blue */
+  --button-primary-background-color: var(--primary);
+  --button-primary-border-color: var(--primary);
+}
+
+button.is-primary {
+  background-color: var(--button-primary-background-color) !important;
+  border-color: var(--button-primary-border-color) !important;
+  color: white !important;
+}
+
+button.is-primary:hover {
+  background-color: #3176f5 !important;
+  border-color: #3176f5 !important;
+}

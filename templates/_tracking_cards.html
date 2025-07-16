@@ -1,0 +1,28 @@
+<div id="trackingcard">
+    {% for item in results %}
+    <div class="card">
+        <header class="card-header">
+            <p class="card-header-title">Tracking #{{ item['tracking_no'] }}</p>
+            <button class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </span>
+            </button>
+        </header>
+        <div class="card-content">
+            <div class="content">
+                <ul>
+                    <li>Shipment Status: {{item['shipment_status']}}</li>
+                    <li>Product(s) Ordered: {{item['product_name']}}</li>
+                    <li>Amount: {{item['product_quantity']}}</li>
+                </ul>
+                <br />
+                <time datetime="2016-1-1">Ordered on: {{ item['order_date'] }}</time>
+            </div>
+        </div>
+        <footer class="card-footer">
+            <a href="#" class="card-footer-item" data-tracking-no="{{ item['tracking_no'] }}" onclick='loadFullTracking("{{ item.tracking_no }}")'>More Details</a>
+        </footer>
+    </div>
+    {% endfor-%}
+</div>

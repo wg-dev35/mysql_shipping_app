@@ -1,0 +1,29 @@
+<div id="invoicecard">
+    {% for item in results %}
+    <div class="card">
+        <header class="card-header">
+            <p class="card-header-title">Invoice #{{ item['order_id'] }}</p>
+            <button class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </span>
+            </button>
+        </header>
+        <div class="card-content">
+            <div class="content">
+                <ul>
+                    <li>Product(s) Ordered: {{item['product_name']}}</li>
+                    <li>Amount: {{item['product_quantity']}}</li>
+                    <li>Shipping from: {{item['origin']}}</li>
+                    <li>Arriving to: {{item['destination']}}</li>
+                </ul>
+                <br />
+                <time datetime="2016-1-1">Ordered on: {{ item['order_date'] }}</time>
+            </div>
+        </div>
+        <footer class="card-footer">
+            <a href="#" class="card-footer-item" data-invoice-id="{{ item['order_id'] }}" onclick="loadFullInvoice('{{ item.order_id }}')">More Details</a>
+        </footer>
+    </div>
+    {% endfor-%}
+</div>

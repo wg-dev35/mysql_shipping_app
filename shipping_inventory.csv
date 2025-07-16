@@ -1,0 +1,251 @@
+item_id,sku,lot_number,product_name,product_type,product_price,stock_loc
+6340,5480835112034,2940293209118,Di Phosphate,Fluid,10.00,Wick Warehouse #4
+3667,1719422719931,2980822348307,Sulfo Compound,Powder,45.00,Whitstable Warehouse #5
+2203,7064058022356,2959783294596,Thio Solution,Powder,25.00,Brooklyn Warehouse #3
+8808,6227437854615,9257763418868,Penta Chloride,Inert Gas,45.00,Pori Warehouse #6
+5163,9086424789074,9215787714014,Alkane Liquid,Fluid,5.00,Wick Warehouse #4
+6370,0546844067217,9226386909695,Mono Sulfate,Powder,45.00,Pori Warehouse #6
+6095,0110664989495,2994850993118,Nitro Amine,Condensed Liquid,15.00,Wick Warehouse #4
+2907,0614323975022,2977135292175,Thio Solution,Powder,15.00,Brooklyn Warehouse #3
+2028,1223927722018,2906842215382,Vinyl Ester,Condensed Liquid,25.00,Wick Warehouse #4
+8286,6423999533535,9218056632798,Penta Chloride,Condensed Liquid,15.00,Whitstable Warehouse #5
+226,7867087509993,9235622586156,Chloro Hydrate,Low-Temp-Gas,45.00,Pietarsaari Warehouse #55
+8734,6290689114851,2973620376788,Alkane Liquid,Fluid,15.00,Brooklyn Warehouse #1
+5788,3469123805683,9231494741297,Sulfo Compound,Powder,15.00,Brooklyn Warehouse #3
+9835,7061701291848,2904393236832,Butyl Ketone,Fluid,45.00,Brooklyn Warehouse #3
+5012,5323851714281,9274805968709,Thio Solution,Condensed Liquid,10.00,Brooklyn Warehouse #1
+587,4832779871996,2976712225001,Alkane Liquid,Powder,10.00,Brooklyn Warehouse #1
+914,3335453487427,9231008556157,Cyano Resin,Condensed Liquid,5.00,Brooklyn Warehouse #3
+8172,1566010188989,2956794037099,Tetra Bromide,Fluid,45.00,Pori Warehouse #6
+2846,5406227914338,9227732745462,Alkane Liquid,Powder,25.00,Wick Warehouse #4
+618,3448716008328,9278768289802,Cyano Resin,Condensed Liquid,5.00,Brooklyn Warehouse #2
+5838,5522021780815,9216149270544,Chloro Hydrate,Inert Gas,25.00,Brooklyn Warehouse #1
+1900,8995862699856,9201666121738,Hexane Base,Condensed Liquid,10.00,Brooklyn Warehouse #2
+1830,7328881878451,9280391849391,Ethyl Acetate,Powder,45.00,Whitstable Warehouse #5
+9838,1410268774558,9233802497186,Chloro Hydrate,Condensed Liquid,5.00,Brooklyn Warehouse #1
+3286,2404560285392,2980893959648,Cyano Resin,Powder,10.00,Brooklyn Warehouse #2
+1057,9620669537351,9203967616784,Nitro Amine,Inert Gas,5.00,Pietarsaari Warehouse #55
+5868,0324136701649,2941878548769,Di Phosphate,Inert Gas,15.00,Brooklyn Warehouse #1
+1266,8749056243598,2981485540749,Methyl Ether,Fluid,5.00,Whitstable Warehouse #5
+1613,9879846369579,9245605588114,Propyl Glycol,Condensed Liquid,10.00,Pietarsaari Warehouse #55
+7104,9120073054708,2975888651751,Tetra Bromide,Fluid,45.00,Pietarsaari Warehouse #55
+4581,8330247373608,2949780667417,Chloro Hydrate,Powder,5.00,Pori Warehouse #6
+114,5146804737881,2934809724134,Tetra Bromide,Powder,10.00,Pietarsaari Warehouse #55
+1766,6758486742436,2966988315186,Alkane Liquid,Condensed Liquid,5.00,Brooklyn Warehouse #3
+1126,7791586123650,9223116696641,Thio Solution,Condensed Liquid,10.00,Pietarsaari Warehouse #55
+3907,7474330126809,9244696729536,Octane Blend,Powder,15.00,Brooklyn Warehouse #3
+9154,4927642191612,9218712974965,Propyl Glycol,Inert Gas,5.00,Brooklyn Warehouse #1
+6815,4986143693605,9286569493205,Sulfo Compound,Powder,5.00,Wick Warehouse #4
+8340,7728110720580,2986523253919,Mono Sulfate,Condensed Liquid,15.00,Wick Warehouse #4
+9429,0330016875010,2952503082756,Tetra Bromide,Powder,10.00,Pietarsaari Warehouse #55
+1436,8373776889745,9214053460181,Ethyl Acetate,Fluid,25.00,Wick Warehouse #4
+3133,8796373393109,9254527971843,Anhydo Solv,Fluid,15.00,Pori Warehouse #6
+2147,7819764195067,9262857420467,Ethyl Acetate,Inert Gas,25.00,Whitstable Warehouse #5
+92,6557833037009,9290558617961,Vinyl Ester,Condensed Liquid,45.00,Pietarsaari Warehouse #55
+9044,9192767107625,9201649768110,Thio Solution,Powder,25.00,Whitstable Warehouse #5
+917,3727367198009,9297571868455,Nitro Amine,Inert Gas,5.00,Pori Warehouse #6
+1821,3229245598395,2934396450225,Mono Sulfate,Fluid,5.00,Whitstable Warehouse #5
+5591,7143017529034,9292164797884,Sulfo Compound,Fluid,5.00,Brooklyn Warehouse #2
+1470,5864893219438,2936357969975,Di Phosphate,Fluid,15.00,Brooklyn Warehouse #2
+213,1232012118506,2919200076877,Alkane Liquid,Condensed Liquid,15.00,Brooklyn Warehouse #1
+8585,4533482320374,2973902050535,Thio Solution,Powder,45.00,Brooklyn Warehouse #3
+4678,4215321070441,2949481079526,Di Phosphate,Low-Temp-Gas,25.00,Brooklyn Warehouse #2
+5253,2899132399360,2914244183758,Octane Blend,Condensed Liquid,5.00,Pori Warehouse #6
+3660,8056882873296,9225586022289,Anhydo Solv,Condensed Liquid,15.00,Pori Warehouse #6
+875,6737128816094,2961995294790,Methyl Ether,Inert Gas,10.00,Brooklyn Warehouse #2
+3169,5925448233337,2940662062269,Vinyl Ester,Inert Gas,15.00,Brooklyn Warehouse #2
+458,7609324157198,9264737712174,Methyl Ether,Low-Temp-Gas,5.00,Pietarsaari Warehouse #55
+2755,8391535252296,9250935366400,Cyano Resin,Low-Temp-Gas,45.00,Pietarsaari Warehouse #55
+5509,4104468517172,2923085881600,Tetra Bromide,Low-Temp-Gas,45.00,Wick Warehouse #4
+4466,5851671569229,2980893954490,Fluoro Agent,Condensed Liquid,15.00,Pori Warehouse #6
+4020,1688339692265,2933087050317,Bromo Fluid,Fluid,15.00,Wick Warehouse #4
+5685,7142583689227,9210869819465,Chloro Hydrate,Inert Gas,25.00,Wick Warehouse #4
+2335,6606992117258,9217948377021,Methyl Ether,Powder,25.00,Whitstable Warehouse #5
+2979,2571218224673,2934741137795,Fluoro Agent,Low-Temp-Gas,10.00,Whitstable Warehouse #5
+4397,6408261583661,9268409124739,Nitro Amine,Low-Temp-Gas,25.00,Brooklyn Warehouse #2
+311,7631210967550,2957114093009,Propyl Glycol,Fluid,25.00,Whitstable Warehouse #5
+3817,0476635087943,2992196170941,Methyl Ether,Low-Temp-Gas,15.00,Pietarsaari Warehouse #55
+5691,8538415187518,9229566521267,Alkane Liquid,Powder,10.00,Pietarsaari Warehouse #55
+6789,2474264528958,2968625351960,Vinyl Ester,Fluid,5.00,Brooklyn Warehouse #3
+1894,5834545117689,2972692495854,Methyl Ether,Fluid,15.00,Wick Warehouse #4
+3181,0890954510645,2926724076313,Sulfo Compound,Powder,25.00,Whitstable Warehouse #5
+2061,1471616512321,2907053492524,Thio Solution,Inert Gas,15.00,Pori Warehouse #6
+6318,0172709246857,9228423752639,Nitro Amine,Low-Temp-Gas,5.00,Whitstable Warehouse #5
+7702,8084236650248,9218885109645,Sulfo Compound,Inert Gas,45.00,Wick Warehouse #4
+9273,4337114550142,9269917339233,Thio Solution,Inert Gas,10.00,Brooklyn Warehouse #1
+4040,9858934547624,9226522187741,Chloro Hydrate,Condensed Liquid,10.00,Whitstable Warehouse #5
+8512,1434852863664,2927621816750,Hexane Base,Fluid,45.00,Brooklyn Warehouse #2
+4827,7938723233333,2986947246085,Sulfo Compound,Low-Temp-Gas,45.00,Brooklyn Warehouse #3
+1803,7006579263283,9212669915569,Hexane Base,Fluid,10.00,Pori Warehouse #6
+8472,1503332371248,9299486760275,Ethyl Acetate,Condensed Liquid,15.00,Brooklyn Warehouse #1
+3993,3357807545430,9250335616433,Tetra Bromide,Condensed Liquid,15.00,Brooklyn Warehouse #2
+3480,3761037114647,2922923697588,Cyano Resin,Low-Temp-Gas,5.00,Brooklyn Warehouse #3
+6740,5513277920933,2993660336504,Ethyl Acetate,Powder,25.00,Wick Warehouse #4
+6023,6275381915869,9218704870411,Methyl Ether,Powder,25.00,Brooklyn Warehouse #2
+9546,9148236999734,2947215771302,Di Phosphate,Low-Temp-Gas,15.00,Brooklyn Warehouse #3
+6626,1885818983702,9209538895480,Alkane Liquid,Powder,15.00,Brooklyn Warehouse #2
+2373,7627011486918,9271551075453,Ethyl Acetate,Condensed Liquid,5.00,Pietarsaari Warehouse #55
+239,0239143163857,2953137824217,Vinyl Ester,Inert Gas,5.00,Pietarsaari Warehouse #55
+4189,2676250596631,2922075181102,Alkane Liquid,Fluid,45.00,Wick Warehouse #4
+9452,7149482305319,2968598789203,Thio Solution,Condensed Liquid,5.00,Whitstable Warehouse #5
+9298,7725004787445,9206149277667,Chloro Hydrate,Fluid,45.00,Brooklyn Warehouse #2
+6730,8671665260102,9242779352558,Tetra Bromide,Low-Temp-Gas,15.00,Brooklyn Warehouse #1
+9111,9043948783957,2982730897793,Vinyl Ester,Powder,5.00,Brooklyn Warehouse #1
+4925,3342778802958,2962401766061,Alkane Liquid,Powder,45.00,Whitstable Warehouse #5
+9250,6720859636659,2937445977070,Octane Blend,Fluid,10.00,Pietarsaari Warehouse #55
+3111,7040825257589,9288756186594,Hexane Base,Inert Gas,10.00,Pori Warehouse #6
+4426,8087947343607,2922486357233,Di Phosphate,Inert Gas,5.00,Whitstable Warehouse #5
+3568,2756880072979,9284221065265,Octane Blend,Fluid,45.00,Brooklyn Warehouse #3
+7477,4356161788681,2952446949437,Di Phosphate,Low-Temp-Gas,15.00,Brooklyn Warehouse #2
+6964,3419890931948,9214640809607,Mono Sulfate,Fluid,25.00,Pori Warehouse #6
+7361,0230367931574,9201094004740,Hexane Base,Low-Temp-Gas,10.00,Whitstable Warehouse #5
+4949,7811845198653,9265845265903,Vinyl Ester,Low-Temp-Gas,5.00,Brooklyn Warehouse #2
+7965,3386402149873,2940119449636,Thio Solution,Powder,5.00,Brooklyn Warehouse #2
+3717,8951973543983,2903825671050,Mono Sulfate,Powder,5.00,Brooklyn Warehouse #2
+9179,6075131007840,2945116257932,Octane Blend,Fluid,10.00,Pietarsaari Warehouse #55
+738,4701331473551,2937363100932,Di Phosphate,Fluid,25.00,Brooklyn Warehouse #3
+7838,0794818880397,2970872999475,Nitro Amine,Powder,5.00,Pietarsaari Warehouse #55
+8668,0725575959705,2920992713840,Nitro Amine,Condensed Liquid,15.00,Pori Warehouse #6
+577,9491898640422,2948068678350,Vinyl Ester,Fluid,10.00,Wick Warehouse #4
+4745,0123892551150,9261546814549,Alkane Liquid,Low-Temp-Gas,25.00,Brooklyn Warehouse #3
+9426,8788639639670,2986613031601,Anhydo Solv,Low-Temp-Gas,15.00,Whitstable Warehouse #5
+426,3282771886091,2963658357071,Vinyl Ester,Fluid,25.00,Whitstable Warehouse #5
+2245,2737825150402,9231832642385,Alkane Liquid,Low-Temp-Gas,10.00,Pietarsaari Warehouse #55
+5962,0159784311793,2984026385236,Mono Sulfate,Powder,10.00,Pietarsaari Warehouse #55
+8819,5640879392698,9258803703784,Di Phosphate,Powder,45.00,Whitstable Warehouse #5
+1823,5561731156657,2908501698154,Anhydo Solv,Condensed Liquid,15.00,Wick Warehouse #4
+2671,2627793928526,9274685509917,Vinyl Ester,Inert Gas,5.00,Pori Warehouse #6
+6777,6353367983511,9292094423068,Thio Solution,Condensed Liquid,10.00,Brooklyn Warehouse #2
+348,9683667827978,2988041032519,Alkane Liquid,Fluid,45.00,Pori Warehouse #6
+9006,1525755011143,2902570390643,Sulfo Compound,Condensed Liquid,25.00,Pori Warehouse #6
+8529,6697392351281,9254848137638,Octane Blend,Powder,25.00,Wick Warehouse #4
+3454,6568380353641,2944656107080,Bromo Fluid,Inert Gas,10.00,Pietarsaari Warehouse #55
+1730,6318693265236,9263305452023,Mono Sulfate,Powder,45.00,Wick Warehouse #4
+759,4344897376456,2913701731273,Nitro Amine,Low-Temp-Gas,25.00,Brooklyn Warehouse #2
+3332,8300470414096,2958380385607,Bromo Fluid,Inert Gas,10.00,Pori Warehouse #6
+728,7561671684249,9266312103537,Di Phosphate,Low-Temp-Gas,15.00,Wick Warehouse #4
+2696,5318412394446,2939613132694,Sulfo Compound,Fluid,15.00,Pori Warehouse #6
+578,0747431055581,9223277260002,Penta Chloride,Condensed Liquid,5.00,Whitstable Warehouse #5
+8954,5953673615710,2973075658767,Cyano Resin,Fluid,25.00,Wick Warehouse #4
+161,1123975331098,2909779435045,Octane Blend,Fluid,5.00,Pietarsaari Warehouse #55
+8930,3440552562415,2989905346797,Tetra Bromide,Powder,15.00,Pietarsaari Warehouse #55
+4264,6386790229468,2946824215795,Ethyl Acetate,Low-Temp-Gas,10.00,Pietarsaari Warehouse #55
+7213,2788827322472,2976160544839,Cyano Resin,Condensed Liquid,10.00,Whitstable Warehouse #5
+3888,3276121670546,9273346169545,Bromo Fluid,Condensed Liquid,10.00,Brooklyn Warehouse #3
+8599,5587493604380,2975157868156,Di Phosphate,Inert Gas,25.00,Brooklyn Warehouse #3
+4366,9314755121288,9265745552493,Tetra Bromide,Condensed Liquid,5.00,Whitstable Warehouse #5
+6861,7215435757587,9267028596323,Nitro Amine,Powder,15.00,Whitstable Warehouse #5
+5459,3915279679581,2975907724510,Chloro Hydrate,Low-Temp-Gas,5.00,Pori Warehouse #6
+1480,7505487324166,2923247733341,Penta Chloride,Fluid,45.00,Brooklyn Warehouse #1
+3455,8894724334907,2904197883768,Nitro Amine,Condensed Liquid,15.00,Wick Warehouse #4
+6319,7484001026635,2970939649381,Fluoro Agent,Inert Gas,10.00,Brooklyn Warehouse #3
+7873,7951754888020,9254412035919,Fluoro Agent,Inert Gas,45.00,Brooklyn Warehouse #3
+5527,2040426220314,9209258608186,Di Phosphate,Powder,45.00,Pietarsaari Warehouse #55
+6876,0794578847302,2953637790630,Propyl Glycol,Fluid,10.00,Brooklyn Warehouse #1
+3384,2059247895649,2982592969331,Penta Chloride,Low-Temp-Gas,10.00,Wick Warehouse #4
+4452,7614246673954,9279411185021,Hexane Base,Inert Gas,45.00,Brooklyn Warehouse #1
+5228,9407851553494,9286473427266,Cyano Resin,Low-Temp-Gas,45.00,Pietarsaari Warehouse #55
+4750,7430702879117,9251440812420,Anhydo Solv,Low-Temp-Gas,45.00,Pietarsaari Warehouse #55
+73,0428236991303,9246871914539,Nitro Amine,Fluid,25.00,Brooklyn Warehouse #3
+3985,1727811436703,9205085782730,Sulfo Compound,Powder,5.00,Brooklyn Warehouse #1
+1220,7834027728714,2923724025440,Tetra Bromide,Powder,45.00,Brooklyn Warehouse #3
+4541,8410653459803,2922426159873,Di Phosphate,Powder,5.00,Brooklyn Warehouse #3
+1359,9559942110625,9211445615754,Di Phosphate,Condensed Liquid,15.00,Brooklyn Warehouse #2
+4395,1309636633262,2969432198984,Penta Chloride,Inert Gas,15.00,Pori Warehouse #6
+6622,5710876980348,2943693224408,Fluoro Agent,Inert Gas,25.00,Wick Warehouse #4
+3222,6473101754082,2923334663445,Chloro Hydrate,Condensed Liquid,15.00,Pietarsaari Warehouse #55
+8775,0633947287021,9273651824344,Thio Solution,Powder,45.00,Pietarsaari Warehouse #55
+3144,9104835035761,2915375124542,Fluoro Agent,Fluid,15.00,Brooklyn Warehouse #3
+5129,2770186421125,2985942512676,Hexane Base,Condensed Liquid,45.00,Brooklyn Warehouse #2
+3077,1500623706840,9298749807078,Thio Solution,Low-Temp-Gas,5.00,Pietarsaari Warehouse #55
+8968,1275984474799,2984110217368,Chloro Hydrate,Condensed Liquid,10.00,Pietarsaari Warehouse #55
+4677,7596359876043,2908913924889,Cyano Resin,Low-Temp-Gas,5.00,Whitstable Warehouse #5
+4886,8954036898846,2967888712525,Octane Blend,Low-Temp-Gas,45.00,Brooklyn Warehouse #2
+6587,2457048097819,9270302397165,Alkane Liquid,Fluid,10.00,Wick Warehouse #4
+741,0535939832748,2908807111456,Sulfo Compound,Powder,5.00,Brooklyn Warehouse #3
+5650,9249653914581,9255711576943,Di Phosphate,Fluid,45.00,Brooklyn Warehouse #3
+5477,4860355017469,9254416813216,Bromo Fluid,Powder,45.00,Whitstable Warehouse #5
+5894,1977590848635,2903846418269,Mono Sulfate,Condensed Liquid,45.00,Whitstable Warehouse #5
+2872,0530467670527,2988678266608,Anhydo Solv,Inert Gas,5.00,Brooklyn Warehouse #2
+5620,5496994720959,9261469952861,Octane Blend,Fluid,45.00,Wick Warehouse #4
+8823,1715387569512,2963756066660,Fluoro Agent,Inert Gas,15.00,Wick Warehouse #4
+2207,1580045811322,2925865667213,Ethyl Acetate,Low-Temp-Gas,25.00,Brooklyn Warehouse #2
+1397,9452045246973,2941324018723,Alkane Liquid,Powder,5.00,Brooklyn Warehouse #1
+4862,4096386035145,9267379147885,Anhydo Solv,Fluid,25.00,Brooklyn Warehouse #1
+4228,1213348811903,2938581632960,Sulfo Compound,Powder,15.00,Pietarsaari Warehouse #55
+4090,7074334773971,9273137964014,Propyl Glycol,Low-Temp-Gas,5.00,Wick Warehouse #4
+7068,2359158862700,9240890163299,Fluoro Agent,Condensed Liquid,5.00,Brooklyn Warehouse #2
+8916,3606130816411,2987208682086,Thio Solution,Fluid,15.00,Brooklyn Warehouse #3
+468,9614963777643,9250003927823,Sulfo Compound,Powder,45.00,Pori Warehouse #6
+8689,2371179394985,2986386416582,Butyl Ketone,Fluid,15.00,Pori Warehouse #6
+8781,4088395004052,9276099120399,Thio Solution,Inert Gas,45.00,Pori Warehouse #6
+6034,1205633790444,2991446350454,Cyano Resin,Inert Gas,15.00,Brooklyn Warehouse #1
+3727,1162570446950,9289948675902,Octane Blend,Powder,25.00,Brooklyn Warehouse #2
+8873,3363490079619,2976392539863,Mono Sulfate,Inert Gas,15.00,Whitstable Warehouse #5
+3469,6809154667619,9212736580515,Chloro Hydrate,Fluid,10.00,Whitstable Warehouse #5
+2398,8810671444599,2941556508955,Hexane Base,Inert Gas,15.00,Pori Warehouse #6
+1310,6014669963204,9226536873746,Ethyl Acetate,Condensed Liquid,15.00,Brooklyn Warehouse #2
+3403,0978612816879,9209826714981,Methyl Ether,Fluid,5.00,Brooklyn Warehouse #1
+1924,0652261246934,9214736628983,Vinyl Ester,Inert Gas,25.00,Brooklyn Warehouse #3
+7853,6766360826578,9203531135666,Di Phosphate,Condensed Liquid,15.00,Wick Warehouse #4
+6361,8087643929631,2920085293297,Bromo Fluid,Low-Temp-Gas,45.00,Pori Warehouse #6
+9731,9981549917046,2915553776808,Bromo Fluid,Fluid,10.00,Brooklyn Warehouse #1
+1424,7868493258451,2990120033812,Anhydo Solv,Fluid,10.00,Whitstable Warehouse #5
+9183,4314984315057,2992819671909,Ethyl Acetate,Condensed Liquid,5.00,Pori Warehouse #6
+6087,9718513248369,9261668264253,Methyl Ether,Fluid,45.00,Pori Warehouse #6
+8387,9534433515622,2929366701186,Vinyl Ester,Powder,5.00,Pietarsaari Warehouse #55
+7453,9850267472949,9212245352290,Vinyl Ester,Condensed Liquid,25.00,Brooklyn Warehouse #2
+3058,9694213535759,2909031331818,Sulfo Compound,Low-Temp-Gas,15.00,Brooklyn Warehouse #3
+968,7722710020002,2944082564914,Mono Sulfate,Powder,5.00,Pietarsaari Warehouse #55
+7409,1397648481018,9208468203396,Propyl Glycol,Powder,10.00,Wick Warehouse #4
+3288,5421289487729,9264488199255,Butyl Ketone,Fluid,5.00,Whitstable Warehouse #5
+1258,0529871934875,2925362338173,Cyano Resin,Powder,45.00,Brooklyn Warehouse #1
+27,0793049721271,9254111065095,Nitro Amine,Low-Temp-Gas,45.00,Brooklyn Warehouse #2
+6536,0096022078325,2947005542242,Methyl Ether,Powder,5.00,Pori Warehouse #6
+703,7566627258956,2942473194788,Fluoro Agent,Fluid,10.00,Brooklyn Warehouse #3
+1217,1687132479202,9251157608422,Ethyl Acetate,Fluid,10.00,Whitstable Warehouse #5
+437,3621263358379,2968031162525,Vinyl Ester,Inert Gas,25.00,Pori Warehouse #6
+6679,6530314635703,2984853577958,Octane Blend,Inert Gas,45.00,Pori Warehouse #6
+9542,9919796621850,9252235644288,Tetra Bromide,Fluid,25.00,Brooklyn Warehouse #2
+6604,1522820971142,9234448882374,Mono Sulfate,Fluid,10.00,Brooklyn Warehouse #3
+4081,2830766430197,2947260837336,Penta Chloride,Low-Temp-Gas,45.00,Whitstable Warehouse #5
+3819,1107032212797,9245502688726,Methyl Ether,Fluid,25.00,Brooklyn Warehouse #3
+3426,8847792258019,9218493248248,Fluoro Agent,Condensed Liquid,45.00,Whitstable Warehouse #5
+8893,1061611318075,9213862879252,Thio Solution,Low-Temp-Gas,25.00,Wick Warehouse #4
+3008,2910459167095,9270644624516,Bromo Fluid,Inert Gas,10.00,Brooklyn Warehouse #3
+4321,3922371826690,2978324274439,Methyl Ether,Powder,25.00,Pori Warehouse #6
+684,2148097299247,2941736481740,Propyl Glycol,Condensed Liquid,25.00,Wick Warehouse #4
+3213,7688074596938,2987497126667,Octane Blend,Inert Gas,45.00,Brooklyn Warehouse #1
+207,9920872927124,2911388286239,Anhydo Solv,Fluid,5.00,Brooklyn Warehouse #3
+4644,3517823189685,2982277817858,Hexane Base,Condensed Liquid,25.00,Pietarsaari Warehouse #55
+6345,4390781257752,9222598924037,Di Phosphate,Powder,45.00,Pietarsaari Warehouse #55
+603,2045921829956,2982996850945,Fluoro Agent,Low-Temp-Gas,25.00,Whitstable Warehouse #5
+173,0128602115936,9281865977350,Thio Solution,Condensed Liquid,5.00,Brooklyn Warehouse #3
+5519,9918605117966,2908939973441,Butyl Ketone,Fluid,45.00,Brooklyn Warehouse #3
+2901,0788632279833,2965438405217,Anhydo Solv,Inert Gas,45.00,Wick Warehouse #4
+9538,2473723550219,2903467917851,Hexane Base,Low-Temp-Gas,45.00,Whitstable Warehouse #5
+496,5557555451788,2995110278662,Alkane Liquid,Inert Gas,5.00,Whitstable Warehouse #5
+8008,8583660401568,2964367648672,Alkane Liquid,Powder,25.00,Brooklyn Warehouse #2
+4337,9466806492196,9288982260952,Anhydo Solv,Powder,10.00,Whitstable Warehouse #5
+7592,3004975431064,2990337724657,Sulfo Compound,Low-Temp-Gas,25.00,Brooklyn Warehouse #2
+2786,1914827722436,2982596132908,Mono Sulfate,Fluid,15.00,Whitstable Warehouse #5
+7041,6039511490967,2961946955329,Anhydo Solv,Fluid,5.00,Brooklyn Warehouse #2
+7312,1915938932882,2969681093559,Alkane Liquid,Powder,10.00,Pori Warehouse #6
+2551,4585915077157,2922532280331,Propyl Glycol,Low-Temp-Gas,15.00,Brooklyn Warehouse #2
+3587,1908685334238,2952238769052,Cyano Resin,Condensed Liquid,25.00,Pori Warehouse #6
+450,8528862263958,2940718845297,Sulfo Compound,Fluid,25.00,Pori Warehouse #6
+310,2978991471933,9228408306413,Hexane Base,Condensed Liquid,5.00,Wick Warehouse #4
+7664,2600969030148,2973833051397,Hexane Base,Condensed Liquid,15.00,Pori Warehouse #6
+3322,3698710283980,2971110854631,Penta Chloride,Fluid,25.00,Brooklyn Warehouse #1
+8390,5642501830011,2916908546305,Fluoro Agent,Condensed Liquid,10.00,Brooklyn Warehouse #1
+4567,0831695244772,9286105427138,Cyano Resin,Powder,10.00,Pori Warehouse #6
+8324,2489615307403,2929042780016,Chloro Hydrate,Condensed Liquid,25.00,Brooklyn Warehouse #3
+678,9105210807294,9270003628469,Bromo Fluid,Powder,25.00,Brooklyn Warehouse #1
+7523,7827235057677,2984296507970,Propyl Glycol,Condensed Liquid,15.00,Brooklyn Warehouse #3
+4898,1440828405332,9246103079869,Di Phosphate,Condensed Liquid,10.00,Wick Warehouse #4
+814,3908961698878,2930633490337,Vinyl Ester,Powder,15.00,Whitstable Warehouse #5
+6273,9406321684409,9201883239469,Chloro Hydrate,Condensed Liquid,15.00,Brooklyn Warehouse #1
+7082,5412039515052,9229148334780,Penta Chloride,Powder,45.00,Pori Warehouse #6
+5964,8242996322274,9273515975588,Vinyl Ester,Inert Gas,45.00,Pietarsaari Warehouse #55
+8194,1671996061840,9248004843488,Ethyl Acetate,Powder,15.00,Whitstable Warehouse #5
+8374,0592404616500,9218942703557,Fluoro Agent,Condensed Liquid,25.00,Whitstable Warehouse #5

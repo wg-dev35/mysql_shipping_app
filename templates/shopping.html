@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% block title %}Request A Quote{% endblock %}
+{% block page_content %}
+<!--origin block-->
+<div class="container columns is-centered">
+    <article class="card column is-centered is-success px-2 py-1 mx-2 my-1">
+        <div class="field column is-centered is-half" id="location">
+            <p class="control has-icons-left">
+                <label class="label">Origin</label>
+                <span class="select">
+                    <select name="destination">
+                        <option value="">-- Select a Country --</option>
+                        {% for each in loc%}
+                        <option value="{{each}}" {% if each=="country" %} selected {% endif %}>{{each.port_country}}</option>
+                        {% endfor %}
+                    </select>
+                </span>
+            </p>
+        </div>
+        <div class="panel column is-centered is-half" id="map">
+            <label class="label">Origin Port</label>
+            <span class="panel-icon">
+                <i class="fa-solid fa-truck-fast"></i>
+            </span>
+            <select name="destination">
+                {% for each in loc%}
+                <option value="">-- Select a City --</option>
+                <option value="{{each}}" {% if each=="cities" %} selected {% endif %}>{{each.port_city}}</option>
+                {% endfor %}
+            </select>
+            <div class="panel-block">
+                <div id='destCoords' class='chart skeleton-block'></div>
+            </div>
+        </div>
+    </article>
+    <!--destination block-->
+    <article class="card column is-centered is-success px-2 py-1 mx-2 my-1">
+        <div class="field column is-centered is-half" id="location">
+            <p class="control has-icons-left">
+                <label class="label">Destination</label>
+                <span class="select">
+                    <select name="destination">
+                        <option value="">-- Select a Country --</option>
+                        {% for each in loc%}
+                        <option value="{{each}}" {% if each=="country" %} selected {% endif %}>{{each.port_country}}</option>
+                        {% endfor %}
+                    </select>
+                </span>
+            </p>
+        </div>
+        <div class="panel column is-centered is-half" id="map">
+            <label class="label">Destination Port</label>
+            <span class="panel-icon">
+                <i class="fa-solid fa-truck-fast"></i>
+            </span>
+            <select name="destination">
+                {% for each in loc%}
+                <option value="">-- Select a City --</option>
+                <option value="{{each}}" {% if each=="cities" %} selected {% endif %}>{{each.port_city}}</option>
+                {% endfor %}
+            </select>
+            <div class="panel-block">
+                <div id='destCoords' class='chart skeleton-block'></div>
+            </div>
+        </div>
+    </article>
+
+
+</div>
+<div class="container columns is-centered">
+    <article class="card column is-half is-success px-2 py-1 mx-2 my-1">
+        <div class="field" id="product">
+            <p class="control has-icons-left">
+                <span class="select">
+                    <select name="item">
+                        {% for each in inv%}
+                        <option value="{{each}}" {% if each=="country" %} selected {% endif %}>{{each.product_name}}</option>
+                        {% endfor %}
+                    </select>
+                </span>
+            </p>
+            <span class="icon is-small is-left">
+                <i class="fas fa-globe"></i>
+            </span>
+            <div class="field">
+                <label class="label">Amount</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="e.g Alex Smith">
+                </div>
+            </div>
+    </article>
+</div>
+
+
+{% endblock %}

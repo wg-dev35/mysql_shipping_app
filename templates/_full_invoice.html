@@ -1,0 +1,70 @@
+<!--full invoice panel-->
+{% if invoice_details %}
+<article class="panel is-primary">
+    <p class="panel-heading">Invoice #{{ invoice_details['order_no'] }}</p>
+    <button class="delete is-right"></button>
+    <a class="panel-block">
+        <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+        </span>
+        <time datetime="2016-1-1">Ordered on: {{ invoice_details['order_date'] }}</time>
+    </a>
+    <a class="panel-block">
+        <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+        </span>
+        Product(s) Ordered: {{invoice_details['product_name']}}
+    </a>
+    <a class="panel-block">
+        <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+        </span>
+        Amount: {{invoice_details['product_quantity']}}
+    </a>
+    <a class="panel-block">
+        <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+        </span>
+        Shipping from: {{invoice_details['origin']}}
+    </a>
+    <a class="panel-block">
+        <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+        </span>
+        Arriving to: {{invoice_details['destination']}}
+    </a>
+    <a class="panel-block">
+        <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+        </span>
+        Cost [per invoice_details]: {{invoice_details['price_per_unit']}}
+    </a>
+    <a class="panel-block">
+        <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+        </span>
+        Taxes: {{invoice_details['taxes_paid']}}
+    </a>
+    <a class="panel-block">
+        <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+        </span>
+        Additional Levies: {{invoice_details['addtl_fees']}}
+    </a>
+    <a class="panel-block">
+        <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+        </span>
+        Subtotal: {{invoice_details['subtotal']}}
+    </a>
+    <a class="panel-block">
+        <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+        </span>
+        Grand Total: {{invoice_details['total']}}
+    </a>
+
+</article>
+{% else %}
+<p>Invoice details not found.</p>
+{% endif %}

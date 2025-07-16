@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{% block doc -%}
+<html{% block html_attribs %}{% endblock html_attribs %}>
+    {%- block html %}
+    {%- block head %}
+
+    <head>
+        {% block title %}<title class="is-centered">Shipping Corpos</title>{% endblock title%}
+        {%- block metas %}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {%- endblock metas %}
+        <link rel="shortcut icon" href="{{ url_for('static', filename='haro.ico') }}" type="image">
+        <link rel="icon" href="{{ url_for('static', filename='haro.ico') }}" type="image/x-icon">
+        {%- block styles %}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        {%- endblock styles %}
+        <script src="https://cdn.plot.ly/plotly-3.0.1.min.js" charset="utf-8"></script>
+    </head>
+    {% endblock head -%}
+    <body{% block body_attribs %}{% endblock body_attribs %}>
+        {% block body -%}
+        {%- block navbar %}
+        <nav class="navbar is-dark mb-2" role="navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                    <img src="{{ url_for('static', filename='logo.png') }}" alt="">
+                </a>
+                <a role="button" class="navbar-burger" data-target="navslide">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <div id="navslide" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="/">Home</a>
+                    <a class="navbar-item" href="/db/">DBQuery</a>
+                    <a class="navbar-item" href="/charts/">Chart</a>
+                    <a class="navbar-item" href="/dashboard/">Dashboard</a>
+                    <a class="navbar-item" href="/search/">Search</a>
+                    <a class="navbar-item" href="/shopping/">Product Calculator</a>
+                    <a class="navbar-item" href="/reports/sales">Sales Reporting</a>
+
+                </div>
+            </div>
+        </nav>
+        {% endblock navbar -%}
+
+        {%- block page_content %}
+        {% endblock -%}
+
+
+        {% block scripts %}
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+        {% endblock scripts %}
+
+        </body>
+        {%- endblock body %}
+
+        </html>
+        {%- endblock html %}
+        {% endblock doc -%}

@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Request A Quote{% endblock %}
+
+
+{% block page_content %}
+
+<h1>View Charts</h1>
+<div id='chart' class='chart'></div>
+<div class="columns is-centered">
+    <div class="column is-centered is-4">
+        <div class="card  is-dark">
+            <div class="card-image">
+                <figure class="image is-64x128">
+                    <img src="{{ url_for('static',filename='boat1.jpeg') }}" alt="" />
+                </figure>
+            </div>
+            <div class="content">
+                Keep track of all pending shipments
+                <span class="panel-icon has-text-info">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="column is-centered is-4">
+        <div class="card is-dark">
+            <div class="card-image">
+                <figure class="image is-64x128">
+                    <img src="{{ url_for('static',filename='boat2.jpeg') }}" alt="" />
+                </figure>
+            </div>
+            <div class="content">
+                Keep track of all pending orders
+                <span class="panel-icon has-text-info">
+                    <i class="fa-solid fa-clipboard"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type='text/javascript'>
+    var graphs = {{ graphJSON | safe}};
+    Plotly.plot('chart', graphs, {});
+</script>
+{% endblock %}

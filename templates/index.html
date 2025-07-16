@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}Shipping Dash{% endblock %}
+
+{% block page_content %}
+<div class="container page-header">
+    <section class="hero is-dark mb-5">
+        <div class="hero-body">
+            <figure class="image is-centered is-64x64">
+                <img src="{{ url_for('static',filename='logo.png') }}" alt="">
+            </figure>
+            <p class="title">Welcome to AltaVista Manufacturing</p>
+            <p class="subtitle">Where the most important thing is end to end</p>
+        </div>
+    </section>
+</div>
+<div class="columns is-centered">
+    <div class="column is-centered is-4">
+        <div class="card  is-dark">
+            <div class="card-image">
+                <figure class="image is-64x128">
+                    <img src="{{ url_for('static',filename='boat1.jpeg') }}" alt="" />
+                </figure>
+            </div>
+            <div class="content">
+                Keep track of all pending shipments
+                <span class="panel-icon has-text-info">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="column is-centered is-4">
+        <div class="card is-dark">
+            <div class="card-image">
+                <figure class="image is-64x128">
+                    <img src="{{ url_for('static',filename='boat2.jpeg') }}" alt="" />
+                </figure>
+            </div>
+            <div class="content">
+                Keep track of all pending orders
+                <span class="panel-icon has-text-info">
+                    <i class="fa-solid fa-clipboard"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

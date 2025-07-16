@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% block title %}Shipping App{% endblock title %}
+
+{%- block page_content %}
+
+<div class="container page-header">
+    <section class="hero is-dark mb-5">
+        <div class="hero-body">
+            <p class="title">Hero title</p>
+            <p class="subtitle">Hero subtitle</p>
+        </div>
+    </section>
+</div>
+<div class="container">
+    <div class="columns is-centered">
+        <div class="panel column is-4">
+            <p class="panel-heading">
+                <span class="panel-icon has-text-info">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </span>
+                <span>Most Recent Orders</span>
+            </p>
+            {%- for item in invoices %}
+            <div class="panel-block">
+                <div class="notification is-success" id="invoicenotify">
+                    <button class="delete"></button>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">{{ item["Purchaser"] }}</p>
+                                <p class="subtitle is-6">{{ item["Invoice #"] }} {{ item["Ordered on"] }}</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <time datetime="2016-1-1">{{ item["Ordered on"] }}</time>
+                            <a class="panel-block is-active">
+                                <span class="panel-icon">
+                                    <i class="fas fa-book" aria-hidden="true"></i>
+                                </span>
+                                {{ item["Item"] }}
+                            </a>
+                            <a class="panel-block">
+                                <span class="panel-icon">
+                                    <i class="fas fa-book" aria-hidden="true"></i>
+                                </span>
+                                {{ item["Amount"] }} at {{ item["Cost"] }}
+                            </a>
+                            <a class="panel-block">
+                                <span class="panel-icon">
+                                    <i class="fas fa-book" aria-hidden="true"></i>
+                                </span>
+                                {{ item["Notes"] }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor-%}
+        </div>
+        <div class="panel column is-8 is-offset-1">
+            <p class="panel-heading">
+                <span class="panel-icon">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </span>
+                <span>Tracking Map</span>
+            </p>
+            <div class="panel-block">
+                <div id='dashtrack' class='chart'></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    const locdata = {{ coords| tojson | safe }};
+
+    const info = [{
+        type: 'scattergeo',
+        mode: 'markers',
+        lon: locdata.map(loc => loc.port_longitude),
+        lat: locdata.map(loc => loc.port_lattitude),
+        marker: {
+            size: 8,
+            color: 'blue'
+        },
+        text: locdata.map(loc => `${loc.port_city},${loc.port_country}`)
+    }];
+
+    const layout = {
+        hovermove: 'closest',
+        scope: 'world',
+        geo: {
+            projection: {
+                type: 'mercator'
+            },
+        },
+        title: 'Some of our servicing locations'
+    };
+    Plotly.newPlot('dashtrack', info, layout);
+</script>
+{% endblock page_content -%}
