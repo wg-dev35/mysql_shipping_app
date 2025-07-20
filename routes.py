@@ -26,16 +26,16 @@ def dash():
 
 def fetch_invoice():
     invoices = []
-    sql = f"CALL random_invoice()"
-    result = db.session.execute(text(sql))
+    sql = text("CALL random_invoice()")
+    result = db.session.execute(sql)
     for row in result.mappings():
         invoices.append(row)
     return invoices
 
 def fetch_coords():
     coords = []
-    sql = f"CALL random_ports()"
-    result = db.session.execute(text(sql))
+    sql = text("CALL random_ports()")
+    result = db.session.execute(sql)
     for row in result:
         coords.append(row._asdict())
     return coords
@@ -43,13 +43,13 @@ def fetch_coords():
 @main.route('/dashboard/orders', methods=['GET'])
 def notification():
     results_set = []
-    sql = f"CALL random_invoice()"
-    result = db.session.execute(text(sql))
+    sql = text("CALL random_invoice()")
+    result = db.session.execute(sql)
     for row in result.mappings():
         results_set.append(row)
     return jsonify(results_set)
 #-----------------------------------------------------------------------------------------------------------------------------
-##SEARCH ROUTES
+##TRACKING ROUTES
 @main.route('/search/', methods=['GET'])
 def search():
     return render_template('search.html')
@@ -64,99 +64,92 @@ def tracking_search():
     results = [row._asdict() for row in result.fetchall()]
     return render_template('_tracking_cards.html', results=results)
 
-@main.route('/search/api/<string:trackingid>/<string:trackingno>', methods=['GET'])
+@main.route('/search/api/tracking/<string:trackingno>', methods=['GET'])
 def full_tracking(trackingno):
-    sql = f"CALL full_tracking_lookup('{trackingno}')"
-    result = db.session.execute(text(sql))
-    tracking_details = [row._asdict() for row in result]
-    if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
-            return render_template('_full_tracking.html', tracking_details=tracking_details[0] if tracking_details else None)
-    else:
-        return render_template('search.html', tracking_details=tracking_details[0] if tracking_details else None)
-    return render_template('search.html')
-
-@main.route('/search/api/invoice', methods=['POST'])
+    sql = text("CALL full_tracking_lookup(:trackingno_param)")
+    result = db.session.execute(sql,{"trackingno_param":trackingno})
+    tracking_details = [row._asdict() for row in result.fetchall()]
+    return render_template('_full_tracking.html', tracking_details=tracking_details[0] if tracking_details else None)
+    
+#-----------------------------------------------------------------------------------------------------------------------------
+##INVOICE ROUTES
+@main.route('/search/api/invoice/', methods=['GET'])
 def invoice_search():
-    results = ""
-    if request.method == 'POST':
-        search_term = request.form.get('invoice')
-        if search_term:
-            sql = f"CALL invoice_lookup('{search_term}')"
-            result = db.session.execute(text(sql))
-            results = [row._asdict() for row in result]
-            if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
-                return render_template('_invoice_cards.html', results=results)
-        else:
-            return render_template('search.html', results=results)
-    return render_template('search.html', results=results)
+    inv_id = request.args.get('invoice')
+    if not inv_id:
+        return render_template('_invoice_cards.html',results=[])
+    sql_search = text("CALL invoice_lookup(:inv_id)")
+    result = db.session.execute(sql_search,{"inv_id":inv_id})
+    results = [row._asdict() for row in result.fetchall()]
+    return render_template('_invoice_cards.html', results=results)
 
-@main.route('/search/api/invoice/<invoiceno>', methods=['POST'])
+@main.route('/search/api/invoice/<string:invoiceno>', methods=['GET'])
 def full_invoice(invoiceno):
-    sql = f"CALL invoice_lookup('{invoiceno}')"
-    result = db.session.execute(text(sql))
-    invoice_details = [row._asdict() for row in result]
-    if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
-            return render_template('_full_invoice.html', invoice_details=invoice_details[0] if invoice_details else None)
-    else:
-        return render_template('search.html', invoice_details=invoice_details[0] if invoice_details else None)
-    return render_template('search.html')
+    sql_search = text("CALL invoice_lookup(:invoice_id_param)")
+    result = db.session.execute(sql_search,{"invoice_id_param":invoiceno})
+    invoice_details = [row._asdict() for row in result.fetchall()]
+    return render_template('_full_invoice.html', invoice_details=invoice_details[0] if invoice_details else None)
+    
+
 #-----------------------------------------------------------------------------------------------------------------------------
 #QUOTE ROUTES
 @main.route('/shopping/', methods=['GET'])
 def quote_load():
-    inventory = f'CALL inventory_menus'
+    inventory = text('CALL inventory_menus')
     inv_items = db.session.execute(text(inventory))
     inv_menu = [row._asdict() for row in inv_items]
-    location = f'CALL loc_menus'
+    location = text('CALL loc_menus')
     loc_items = db.session.execute(text(location))
-    loc_menu = [row._asdict() for row in loc_items]
+    loc_menu = [row._asdict() for row in loc_items.fetchall()]
     return render_template('shopping.html',inv=inv_menu,loc=loc_menu)
 
 @main.route('/shopping/api/city/<string:country_name>', methods=['GET'])
 def cities(country_name):
     city_match = text("CALL port_city_match(:country_param)")
     city_loc = db.session.execute(city_match,{"country_param":country_name})
-    city_list = [row._asdict() for row in city_loc]
+    city_list = [row._asdict() for row in city_loc.fetchall()]
     return jsonify(city_list)
 
 @main.route('/shopping/api/products/<string:prod_name>', methods=['GET'])
 def product_search(prod_name):
     product_type = text("CALL product_typeload(:prod_name)")
     names = db.session.execute(product_type,{"prod_name":prod_name})
-    name_list = [row._asdict() for row in names]
+    name_list = [row._asdict() for row in names.fetchall()]
     return jsonify(name_list)
 
 @main.route('/shopping/api/containers/<string:prod_name>/<string:prod_type>', methods=['GET'])
 def shipping_containers(prod_name,prod_type):
     product_container = text("CALL shipping_containers(:prod_name, :prod_type)")
     types = db.session.execute(product_container,{"prod_name":prod_name,"prod_type":prod_type})
-    type_list = [row._asdict() for row in types]
+    type_list = [row._asdict() for row in types.fetchall()]
     return jsonify(type_list)
 
 @main.route('/shopping/api/fees/<string:country_name>/<string:city_name>', methods=['GET'])
 def addtl_fees(country_name,city_name):
     fees = text("CALL taxes_fees(:country_name, :city_name)")
     regions = db.session.execute(fees,{"country_name":country_name,"city_name":city_name})
-    region_list = [row._asdict() for row in regions]
+    region_list = [row._asdict() for row in regions.fetchall()]
     return jsonify(region_list)
 
-@main.route('/shopping/employee', methods=['GET', 'POST'])
+
+
+#-----------------------------------------------------------------------------------------------------------------------------
+##Employee Routes
+@main.route('/employees', methods=['GET'])
+def employees():
+    return render_template('employees.html')
+
+@main.route('/employees/api/search/', methods=['GET'])
 def emp_search():
-    results = ""
-    if request.method == 'POST':
-        search_term = request.form.get('employee')
-        if search_term:
-            sql = f"CALL employee_lookup('{search_term}')"
-            result = db.session.execute(text(sql))
-            response = [row._asdict() for row in result]
-            df = pd.DataFrame(response)
-            results = df.to_html(classes='table is-striped', table_id='employeeTable')
-            results = Markup(results)
-            if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
-                return results
-            else:
-                return render_template('search.html', results=results)
-    return render_template('search.html', results=results)
+    emp_no = request.args.get("employee")
+    if not emp_no:
+        return jsonify([])
+    emp_id = text("CALL employee_lookup(:employee_param)")
+    staff_query = db.session.execute(emp_id,{"employee_param":emp_no})
+    emp_list = [row._asdict() for row in staff_query.fetchall()]
+    return render_template('_emp_card.html',emp_list=emp_list)
+
+
 #-----------------------------------------------------------------------------------------------------------------------------
 ##REPORTING ROUTES
 @main.route('/reports/', methods=['GET', 'POST'])
@@ -166,8 +159,8 @@ def report_landing():
 @main.route('/reports/sales/', methods=['GET', 'POST'])
 def sales_report():
     results_set = []
-    sql = 'select * from corpo_sales;'
-    result = db.session.execute(text(sql))
+    sql = text('select * from corpo_sales;')
+    result = db.session.execute(sql)
     for row in result.mappings():
         results_set.append(row)
     df = pd.DataFrame(results_set)
@@ -182,8 +175,8 @@ def sales_report():
 @main.route('/charts/', methods=['GET', 'POST'])
 def myChart():
     results_set = []
-    sql = 'select * from shipping_orders '
-    result = db.session.execute(text(sql))
+    sql = text('select * from shipping_orders ')
+    result = db.session.execute(sql)
     for row in result.mappings():
         results_set.append(row)
     df = pd.DataFrame(results_set)   
@@ -200,8 +193,8 @@ def myChart():
 @main.route('/db/', methods=['GET'])
 def dbQuery():
     results_set = []
-    sql = 'select * from shipping_corpos;'
-    result = db.session.execute(text(sql))
+    sql = text('select * from shipping_corpos;')
+    result = db.session.execute(sql)
     for row in result.mappings():
         results_set.append(row)
     df = pd.DataFrame(results_set)

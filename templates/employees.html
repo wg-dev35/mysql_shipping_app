@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Demo Flask{% endblock %}
+{% block page_content %}
+<div class="page-header mb-2">
+    <h1>Employee Search</h1>
+</div>
+<div class="container columns is-centered">
+    <div class="column is-half">
+        <div class="panel is-4" id="employee">
+            <p class="panel-heading mb-2">Employee Lookup</p>
+            <form class="field is-grouped has-addons has-addons-centered" action="{{ url_for('main.employees') }}" method="get">
+                <div class="control is-expanded px-2">
+                    <input type="text" class="input is-small is-info" name="employee" id="employee-results">
+                </div>
+                <div class="control px-2 pb-2">
+                    <button type="submit" class="button is-info">Search</button>
+                </div>
+            </form>
+            <div id="employeecard" class="px-2 pb-2"></div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

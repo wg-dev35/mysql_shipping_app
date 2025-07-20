@@ -1,0 +1,24 @@
+{% for employee in emp_list %}
+<div class="card">
+    <header class="card-header">
+        <p class="card-header-title">Employee Information</p>
+        <button class="card-header-icon" aria-label="more options">
+            <span class="icon">
+                <i class="fa-solid fa-truck-fast"></i>
+            </span>
+        </button>
+    </header>
+    <div class="card-content">
+        <div class="content">
+            <ul>
+                <li>Employee ID:{{ employee['employee_id']}} </li>
+                <li>Employee Name: {{employee['fname'] }} {{employee['lname']}}</li>
+                <li>Subsidiary: {{employee['subsidiary']}}</li>
+                <li>Contract Issued By: {{employee['contracted_by']}}</li>
+                <li>Employee Email: {{employee['email']}}</li>
+            </ul>
+            <br />
+        </div>
+    </div>
+</div>
+{% endfor-%}
